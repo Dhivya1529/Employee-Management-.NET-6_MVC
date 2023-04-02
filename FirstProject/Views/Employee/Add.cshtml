@@ -1,0 +1,32 @@
+﻿@model FirstProject.Models.AddEmployeeViewModel
+@{
+    ViewData["Title"] = "Add Employee";
+}
+
+<h1>Add Employee</h1>
+
+<form method = "post" action="Add">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="form-group">
+        <label for="Email">Email Address</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="form-group">
+        <label for="Salary">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary" >
+    </div>
+    <div class="form-group">
+        <label for="DOB">Date of Birth</label>
+        <input type="date" class="form-control" asp-for="DOB" >
+    </div>
+    <div class="form-group">
+        <label for="Department">Department</label>
+        <input type="text" class="form-control" asp-for="Department" id="Name">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
